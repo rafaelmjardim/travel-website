@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14rem;
+    margin: 5rem 0;
+    
+    &_logo img {
+        min-width: 11.4rem;
+        height: auto;
+    }
+
+    &_menu {
+        display: flex;
+        gap: 5.5rem;
+        
+        &_item {
+            font-size: 1.7rem;
+            font-family: var(--font-open);
+            font-weight: bold;
+            color: #212832;
+            &_span {
+                border: .1rem solid #212832;
+                border-radius: .5rem;
+                padding: .9rem 2.2rem;
+            }
+        }
+
+    }
+}
