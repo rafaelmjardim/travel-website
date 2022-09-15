@@ -1,4 +1,5 @@
 .services {
+    position: relative;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     justify-content: center;
 
     &_header {
+        text-align: center;
         
         &_txt {
             font-family: var(--font-poppins);
@@ -13,5 +15,55 @@
             font-weight: 600;
             color: var(--font-color-secundary);
         }
+
+        &_title {
+            font-family: var(--font-volk);
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--font-color-primary);
+            margin-top: 1rem;
+        }
+    }
+
+    &_decoration {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        z-index: -1;
+        width: 15.3rem;
+        height: auto;
+    }
+
+    &_main {
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem ;
+        gap: 10rem;
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 23rem;
+
+            &_title {
+                font-family: var(--font-poppins);
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 3rem;
+                color: var(--font-color-primary);
+            }
+
+            &_txt {
+                font-family: var(--font-poppins);
+                font-weight: 500;
+                margin-top: 1.5rem;
+                color: var(--font-color-secundary);
+                max-width: 18rem;
+                text-align: center;
+            }
+        }
+        
     }
 }
