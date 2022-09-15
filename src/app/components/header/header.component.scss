@@ -17,14 +17,28 @@
         gap: 5.5rem;
         
         &_item {
-            font-size: 1.7rem;
-            font-family: var(--font-open);
-            font-weight: bold;
-            color: #212832;
+
+            &_link {
+                font-size: 1.7rem;
+                font-family: var(--font-open);
+                font-weight: bold;
+                color: #212832;
+                
+                &:hover {
+                    color: #F1A501;
+                    transition: 0.3s;
+                }
+            }
             &_span {
                 border: .1rem solid #212832;
                 border-radius: .5rem;
                 padding: .9rem 2.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F1A501;
+                    transition: 0.3s;
+                }
             }
         }
 

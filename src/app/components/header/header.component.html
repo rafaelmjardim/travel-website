@@ -3,12 +3,26 @@
         <img routerLink="/" src="./assets/Logo.png" alt="Logo">
     </div>
     <ul class="header_menu">
-        <li class="header_menu_item"><a routerLink="/services">Services</a></li>
-        <li class="header_menu_item"><a routerLink="/destinations">Destinations</a></li>
-        <li class="header_menu_item"><a>Bookings</a></li>
-        <li class="header_menu_item"><a>About</a></li>
-        <li class="header_menu_item">Login</li>
-        <li class="header_menu_item"><span class="header_menu_item_span"><a>Sign up</a></span></li>
-        <li class="header_menu_item">EN</li>
+        <li class="header_menu_item">
+            <a routerLink="/services" class="header_menu_item_link">Services</a>
+        </li>
+        <li class="header_menu_item">
+            <a routerLink="/destinations" class="header_menu_item_link">Destinations</a>
+        </li>
+        <li class="header_menu_item">
+            <a class="header_menu_item_link">Bookings</a>
+        </li>
+        <li class="header_menu_item">
+            <a class="header_menu_item_link">About</a>
+        </li>
+        <li class="header_menu_item">
+            <a routerLink="/login" class="header_menu_item_link">Login</a>
+        </li>
+        <li class="header_menu_item">
+            <span routerLink="/signup" class="header_menu_item_span">
+                <a  class="header_menu_item_span_link">Sign up</a>
+            </span>
+        </li>
+        <li class="header_menu_item"><a class="header_menu_item_link">EN</a></li>
     </ul>
 </div>
