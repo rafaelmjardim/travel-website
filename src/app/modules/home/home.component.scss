@@ -1,0 +1,89 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    &_content {
+        width: 63rem;
+
+        &_article {
+
+            &_txt {
+                font-family: var(--font-poppins);
+                font-size: 2rem;
+                font-weight: 600;
+                color: #DF6951;
+            }
+
+            &_title {
+                font-family: var(--font-volk);
+                font-size: 8.4rem;
+                font-weight: 600;
+                color: #181E4B;
+                line-height: 8.4rem;
+                margin-top: 2.4rem;
+            }
+
+            &_paragraph {
+                max-width: 47.7rem;
+                font-family: var(--font-poppins);
+                font-weight: 500;
+                color: var(--font-color-secundary);
+                line-height: 3rem;
+                margin-top: 3rem;
+            }
+
+            &_actions {
+                margin-top: 3.4rem;
+                display: flex;
+                gap: 4.4rem;
+
+                &_find {
+                    width: 17rem;
+                    height: 6rem;
+                    border: none;
+                    border-radius: 1rem;
+                    background-color: #F1A501;
+                    font-family: var(--font-sans);
+                    font-size: 1.7rem;
+                    color: #fff;
+                }
+
+                &_demo {
+                    width: 16.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    &_icon {
+                        width: 5.2rem;
+                        height: auto;                       
+                    }
+
+                    &_txt {
+                        font-family: var(--font-poppins);
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        color: #686D77;
+                    }
+                }
+            }
+        }
+    }
+
+    &_ilustration {
+        
+        &_img {
+            max-width: 78.3rem;
+        }
+        
+        &_background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            height: 87.2rem;
+        }
+    }
+}
