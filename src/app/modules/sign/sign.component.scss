@@ -6,7 +6,7 @@
 
     &_box {
         width: 35rem;
-        height: 50rem;
+        height: 55rem;
         border-radius: 3rem;
         background-color: #ffffff;
         display: flex;
@@ -39,6 +39,7 @@
                 font-weight: 600;
                 font-size: 1.8rem;
                 margin-top: 3rem;
+                cursor: pointer;
             }
 
             &_signup {
