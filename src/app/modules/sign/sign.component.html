@@ -6,13 +6,13 @@
             Sign Up
         </h2>
 
-        <form class="sign_box_form" action="">
+        <form class="sign_box_form" action="" [formGroup]="signForm">
             
             <mat-form-field appearance="outline">
                 
                 <mat-label>Username</mat-label>
 
-                <input type="text" matInput placeholder="Enter your username">
+                <input type="text" matInput placeholder="Enter your username" formControlName="userNameInput">
                 
 
             </mat-form-field>
@@ -21,7 +21,7 @@
                 
                 <mat-label>E-mail</mat-label>
 
-                <input type="email" matInput placeholder="Enter your e-mail">
+                <input type="email" matInput placeholder="Enter your e-mail" formControlName="emailInput">
                 
 
             </mat-form-field>
@@ -30,11 +30,11 @@
 
                 <mat-label>Password</mat-label>
                 
-                <input type="password" matInput placeholder="Enter your password">
+                <input type="password" matInput placeholder="Enter your password" formControlName="passwordInput">
 
             </mat-form-field>
             
-            <button class="sign_box_form_button">Sign Up</button>
+            <button class="sign_box_form_button" (click)="handleClick()">Sign Up</button>
 
             <p class="sign_box_form_signup">have an account?
                 <span class="sign_box_form_signup_span">

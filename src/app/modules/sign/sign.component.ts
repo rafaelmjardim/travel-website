@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from "@angular/forms";
+
+import { MatDialog } from "@angular/material/dialog";
+import { SigDialogComponent } from '../sig-dialog/sig-dialog.component';
+type NewUser = {
+  userName: string,
+  password: string,
+  email: string
+}
 
 @Component({
   selector: 'app-sign',
@@ -7,9 +16,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignComponent implements OnInit {
 
-  constructor() { }
+  signForm!: FormGroup;
+  newUser!: NewUser;
+
+  constructor(private form_builder: FormBuilder, public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    
+    this.signForm = this.form_builder.group({
+      userNameInput: [''],
+      emailInput: [''],
+      passwordInput: ['']
+    })
+  }
+
+  handleClick = () => {
+    const userNameInput = this.signForm.controls['userNameInput'].value;
+    const emailInput = this.signForm.controls['emailInput'].value;
+    const passwordInput = this.signForm.controls['passwordInput'].value;
+
+    this.newUser = {
+      userName: userNameInput,
+      email: emailInput,
+      password: passwordInput
+    }
+    
+    if(this.newUser.userName && this.newUser.email && this.newUser.password) {
+     
+      this.dialog.open(SigDialogComponent, {
+        width: '50rem',
+        height: '20rem'
+      });
+
+    }
   }
 
 }

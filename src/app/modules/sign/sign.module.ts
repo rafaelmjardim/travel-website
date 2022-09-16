@@ -6,6 +6,12 @@ import { SignComponent } from './sign.component';
 
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { MatDialogModule } from "@angular/material/dialog";
+import { MatButtonModule } from "@angular/material/button";
+
+
+import { ReactiveFormsModule } from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -15,7 +21,10 @@ import { MatInputModule } from "@angular/material/input";
     CommonModule,
     SignRoutingModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatButtonModule
   ]
 })
 export class SignModule { }
