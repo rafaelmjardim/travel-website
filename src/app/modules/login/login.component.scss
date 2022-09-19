@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .login {
     display: flex;
     justify-content: center;
@@ -18,9 +20,9 @@
 
         &_title {
             font-size: 4rem;
-            font-family: var(--font-poppins);
+            font-family: $font-poppins;
             font-weight: 600;
-            color: var(--font-color-primary);
+            color: $font-color-primary;
 
         }
 

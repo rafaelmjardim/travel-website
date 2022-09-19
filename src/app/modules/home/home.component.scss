@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .home {
     display: flex;
     justify-content: center;
@@ -10,14 +12,14 @@
         &_article {
 
             &_txt {
-                font-family: var(--font-poppins);
+                font-family: $font-poppins;
                 font-size: 2rem;
                 font-weight: 600;
                 color: #DF6951;
             }
 
             &_title {
-                font-family: var(--font-volk);
+                font-family: $font-volk;
                 font-size: 8.4rem;
                 font-weight: 600;
                 color: #181E4B;
@@ -27,7 +29,7 @@
 
             &_paragraph {
                 max-width: 47.7rem;
-                font-family: var(--font-poppins);
+                font-family: $font-poppins;
                 font-weight: 500;
                 color: var(--font-color-secundary);
                 line-height: 3rem;
@@ -62,7 +64,7 @@
                     }
 
                     &_txt {
-                        font-family: var(--font-poppins);
+                        font-family: $font-poppins;
                         font-size: 1.7rem;
                         font-weight: 500;
                         color: #686D77;

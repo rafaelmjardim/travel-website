@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 
+import { SignDialogComponent } from './sign-dialog/sign-dialog.component';
+
 import { MatDialog } from "@angular/material/dialog";
-import { SigDialogComponent } from '../sig-dialog/sig-dialog.component';
 type NewUser = {
   userName: string,
   password: string,
@@ -43,7 +44,7 @@ export class SignComponent implements OnInit {
     
     if(this.newUser.userName && this.newUser.email && this.newUser.password) {
      
-      this.dialog.open(SigDialogComponent, {
+      this.dialog.open(SignDialogComponent, {
         width: '50rem',
         height: '20rem'
       });

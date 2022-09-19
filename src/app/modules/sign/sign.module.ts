@@ -10,12 +10,14 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatButtonModule } from "@angular/material/button";
 
 
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { SignDialogComponent } from './sign-dialog/sign-dialog.component'
 
 
 @NgModule({
   declarations: [
-    SignComponent
+    SignComponent,
+    SignDialogComponent
   ],
   imports: [
     CommonModule,

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SigDialogComponent } from './sig-dialog.component';
+import { SignDialogComponent } from './sign-dialog.component';
 
-describe('SigDialogComponent', () => {
-  let component: SigDialogComponent;
-  let fixture: ComponentFixture<SigDialogComponent>;
+describe('SignDialogComponent', () => {
+  let component: SignDialogComponent;
+  let fixture: ComponentFixture<SignDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SigDialogComponent ]
+      declarations: [ SignDialogComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SigDialogComponent);
+    fixture = TestBed.createComponent(SignDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

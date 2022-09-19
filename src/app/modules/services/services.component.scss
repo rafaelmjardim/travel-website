@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .services {
     position: relative;
     height: 80vh;
@@ -10,17 +12,17 @@
         text-align: center;
         
         &_txt {
-            font-family: var(--font-poppins);
+            font-family: $font-poppins;
             font-size: 1.8rem;
             font-weight: 600;
             color: var(--font-color-secundary);
         }
 
         &_title {
-            font-family: var(--font-volk);
+            font-family: $font-volk;
             font-size: 5rem;
             font-weight: 700;
-            color: var(--font-color-primary);
+           
             margin-top: 1rem;
         }
     }
@@ -62,15 +64,15 @@
             // }
 
             &_title {
-                font-family: var(--font-poppins);
+                font-family: $font-poppins;
                 font-size: 2rem;
                 font-weight: 600;
                 margin-top: 3rem;
-                color: var(--font-color-primary);
+                color: $font-color-primary;
             }
 
             &_txt {
-                font-family: var(--font-poppins);
+                font-family: $font-poppins;
                 font-weight: 500;
                 margin-top: 1.5rem;
                 color: var(--font-color-secundary);

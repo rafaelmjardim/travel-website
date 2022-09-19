@@ -1,9 +1,11 @@
+@import '../../styles/config.scss';
+
 .footer {
     padding: 8rem 14rem ;
     text-align: center;
-    font-family: var(--font-poppins);
+    font-family: $font-poppins;
     font-weight: 500;
-    color: var(--font-color-primary);
+    color: $font-color-primary;
 
     &_main {
         display: flex;

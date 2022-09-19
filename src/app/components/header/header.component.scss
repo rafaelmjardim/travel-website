@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -36,7 +38,7 @@
 
             &_link {
                 font-size: 1.7rem;
-                font-family: var(--font-open);
+                font-family: $font-open;
                 font-weight: bold;
                 color: #212832;
                 

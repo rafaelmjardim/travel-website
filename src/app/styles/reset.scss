@@ -1,3 +1,5 @@
+@import '../styles/config.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--font-color-primary);
+    color: $font-color-primary;
 }
 
 ul, li {

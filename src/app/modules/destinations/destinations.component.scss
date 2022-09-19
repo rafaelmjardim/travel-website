@@ -1,3 +1,5 @@
+@import '../../styles/config.scss';
+
 .destinations {
     display: flex;
     flex-direction: column;
@@ -9,17 +11,17 @@
         text-align: center;
 
         &_txt {
-            font-family: var(--font-poppins);
+            font-family: $font-poppins;
             font-size: 1.8rem; 
             font-weight: 600;
             color: var(--font-color-secundary);
         }
 
         &_title {
-            font-family: var(--font-volk);
+            font-family: $font-volk;
             font-size: 5rem;
             font-weight: 700;
-            color: var(--font-color-primary);
+            color: $font-color-primary;
             margin-top: 1rem;
         }
     }
@@ -59,7 +61,7 @@
                 position: absolute;
                 bottom: 0;
                 border-radius: 0 0 2.4rem 2.4rem;
-                font-family: var(--font-poppins);
+                font-family: $font-poppins;
                 color: var(--font-color-secundary);
 
                 &_title {
