@@ -17,6 +17,22 @@
         gap: 5.5rem;
         
         &_item {
+            display: flex;
+            align-items: center;
+
+            &.sign_up_styles {
+                border: .1rem solid #212832;
+                border-radius: .5rem;
+                padding: .9rem 2.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F1A501;
+                    transition: 0.3s;
+                }
+            }
+
+            // ampersand;
 
             &_link {
                 font-size: 1.7rem;
@@ -26,17 +42,6 @@
                 
                 &:hover {
                     color: #F1A501;
-                    transition: 0.3s;
-                }
-            }
-            &_span {
-                border: .1rem solid #212832;
-                border-radius: .5rem;
-                padding: .9rem 2.2rem;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: #F1A501;
                     transition: 0.3s;
                 }
             }

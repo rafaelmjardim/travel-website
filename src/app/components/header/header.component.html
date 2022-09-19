@@ -3,26 +3,8 @@
         <img routerLink="/" src="./assets/Logo.png" alt="Logo">
     </div>
     <ul class="header_menu">
-        <li class="header_menu_item">
-            <a routerLink="/services" class="header_menu_item_link">Services</a>
+        <li class="header_menu_item" [ngClass]="{'sign_up_styles': menuItem.class}" *ngFor="let menuItem of menuList">
+            <a class="header_menu_item_link" [routerLink]="menuItem.url">{{ menuItem.name}}</a>
         </li>
-        <li class="header_menu_item">
-            <a routerLink="/destinations" class="header_menu_item_link">Destinations</a>
-        </li>
-        <li class="header_menu_item">
-            <a class="header_menu_item_link" routerLink="/bookings">Bookings</a>
-        </li>
-        <li class="header_menu_item">
-            <a class="header_menu_item_link" routerLink="/about">About</a>
-        </li>
-        <li class="header_menu_item">
-            <a routerLink="/login" class="header_menu_item_link">Login</a>
-        </li>
-        <li class="header_menu_item">
-            <span routerLink="/signup" class="header_menu_item_span">
-                <a  class="header_menu_item_span_link">Sign up</a>
-            </span>
-        </li>
-        <li class="header_menu_item"><a class="header_menu_item_link">EN</a></li>
     </ul>
 </div>
