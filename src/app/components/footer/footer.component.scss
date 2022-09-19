@@ -1,0 +1,86 @@
+.footer {
+    padding: 8rem 14rem ;
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    color: var(--font-color-primary);
+
+    &_main {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 8.6rem;
+
+        &_jadoo {
+            width: 20.7rem;
+
+            &_title {
+                font-size: 4.4rem;
+            }
+
+            &_txt {
+                margin-top: 1.9rem;
+                font-size: 1.3rem;
+                color: var(--font-color-secundary);
+            }
+        }
+
+        &_content {
+            
+            &_title {
+                font-size: 2.1rem;
+                font-weight: bold;
+            }
+
+            &_list {
+                margin-top: 3.4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                
+                &_item {
+                    color: var(--font-color-secundary);
+                }
+           }
+        }
+        &_social {
+            width: 21.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2.6rem;
+
+            &_icons {
+                display: flex;
+                justify-content: space-between;
+                width: 17.7rem;
+
+                &_icon {
+                    width: auto;
+                    height: 5rem;
+                }
+            }
+
+            &_actions {
+
+                &_links {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: .7rem;
+
+                    &_button {
+                        width: auto;
+                        height: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &_copy {
+        margin-top: 8.4rem;
+        font-size: 1.4rem;
+        color: var(--font-color-secundary);
+    }
+}

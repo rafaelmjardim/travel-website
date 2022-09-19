@@ -1,1 +1,52 @@
-<p>footer works!</p>
+<div class="footer">
+   
+    <div class="footer_main">
+        <div class="footer_main_jadoo">
+            <h2 class="footer_main_jadoo_title">
+                Jadoo.
+            </h2>
+            <p class="footer_main_jadoo_txt">
+                Book your trip in minute, get full
+                Control for much longer.
+            </p>
+        </div>
+
+        <ul class="footer_main_content" *ngFor="let footerItem of footerList">
+            <h2 class="footer_main_content_title">
+                {{ footerItem.title }}
+            </h2>
+            <div class="footer_main_content_list">
+                <li class="footer_main_content_list_item" *ngFor=" let item of footerItem.itemList">
+                    {{ item.txt }}
+                </li>
+            </div>               
+        </ul>
+
+        <div class="footer_main_social">
+            
+            <div class="footer_main_social_icons">
+                <img class="footer_main_social_icons_icon" src="./assets/faceIcon.png" alt="facebook Icon">
+                <img class="footer_main_social_icons_icon" src="./assets/instagramIcon.png" alt="Instagran Icon">
+                <img class="footer_main_social_icons_icon" src="./assets/twIcon.png" alt="tw Icon">
+            </div>
+
+            <div class="footer_main_social_actions">
+                <p class="footer_main_social_actions_txt">
+                    Discover our app
+                </p>
+                <div class="footer_main_social_actions_links">
+                    <img class="footer_main_social_actions_links_button" src="./assets/googleIcon.png" alt="Google Play">
+                    <img class="footer_main_social_actions_links_button" src="./assets/appleIcon.png" alt="Apple Story">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer_copy">
+        <p class="footer_copy_txt">
+            All rights reserved@jadoo.co
+        </p>
+    </div>
+
+</div>
