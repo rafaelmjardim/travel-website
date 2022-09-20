@@ -1,1 +1,77 @@
 @import '../../styles/config.scss';
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    &_main {
+        display: flex;
+        gap: 12.4rem;
+
+        &_article {
+            width: 40.9rem;
+
+            &_txt {
+                font-family: $font-poppins;
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: $font-color-secundary;
+                text-transform: uppercase;
+            }
+
+            &_title {
+                font-family: $font-volk;
+                font-size: 5rem;
+                font-weight: 700;
+                line-height: 6.4rem;
+                text-transform: capitalize;
+            }
+        }
+
+        &_feedback {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 3.4rem;
+            padding: 3rem;
+            width: 50.4rem;
+            height: 24.5rem;
+            border-radius: 1rem;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+            font-family: $font-poppins;
+            color: $font-color-secundary;
+            font-weight: 500;
+
+            &_perfil {
+                position: absolute;
+                top: -3.4rem;
+                left: -3.4rem;
+                &_img {
+                    width: auto;
+                    height: 6.8rem;
+                }
+            }
+
+            &_txt {
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                
+            }
+
+            &_user {
+
+                &_name {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+
+                &_location {
+                    font-size: 1.4rem;
+                }
+            }
+       
+        }
+    }
+}
