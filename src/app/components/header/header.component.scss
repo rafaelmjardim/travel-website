@@ -46,6 +46,13 @@
                     color: #F1A501;
                     transition: 0.3s;
                 }
+
+                &.link_sign_up_styles {
+
+                    &:hover {
+                        color: $font-color-primary;
+                    }
+                }
             }
         }
 

@@ -4,7 +4,7 @@
     </div>
     <ul class="header_menu">
         <li class="header_menu_item" [ngClass]="{'sign_up_styles': menuItem.class}" *ngFor="let menuItem of menuList">
-            <a class="header_menu_item_link" [routerLink]="menuItem.url">{{ menuItem.name}}</a>
+            <a class="header_menu_item_link" [ngClass]="{'link_sign_up_styles': menuItem.class}" [routerLink]="menuItem.url">{{ menuItem.name}}</a>
         </li>
     </ul>
 </div>
