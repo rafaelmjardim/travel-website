@@ -14,7 +14,7 @@
             font-family: $font-poppins;
             font-size: 1.8rem; 
             font-weight: 600;
-            color: var(--font-color-secundary);
+            color: $font-color-secundary;
         }
 
         &_title {
@@ -62,7 +62,7 @@
                 bottom: 0;
                 border-radius: 0 0 2.4rem 2.4rem;
                 font-family: $font-poppins;
-                color: var(--font-color-secundary);
+                color: $font-color-secundary;
 
                 &_title {
                     display: flex;

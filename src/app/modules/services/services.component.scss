@@ -15,7 +15,7 @@
             font-family: $font-poppins;
             font-size: 1.8rem;
             font-weight: 600;
-            color: var(--font-color-secundary);
+            color: $font-color-secundary;
         }
 
         &_title {
@@ -75,7 +75,7 @@
                 font-family: $font-poppins;
                 font-weight: 500;
                 margin-top: 1.5rem;
-                color: var(--font-color-secundary);
+                color: $font-color-secundary;
                 max-width: 18rem;
                 text-align: center;
             }

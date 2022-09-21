@@ -14,63 +14,12 @@
 
     <div class="services_main">
         
-        <div class="services_main_box">
-            
-            <img class="services_main_box_icon" src="./assets/SatelliteIcon.png" alt="SatelliteIcon" [ngStyle]="{width: '9.2rem', heigth: '7.8rem'}">
-
-            <h2 class="services_main_box_title">Calculated Weather</h2>
-
-            <p class="services_main_box_txt">
-                Built Wicket longer
-                 admire do barton 
-                 vanity itself do in it.
-            </p>
-
+        <div class="services_main_box" *ngFor="let serviceItem of serviceList">
+            <img class="services_main_box_icon" [src]="serviceItem.img" alt="SatelliteIcon" [ngStyle]="{width: '9.2rem', heigth: '7.8rem'}">
+            <h2 class="services_main_box_title"> {{ serviceItem.title }} </h2>
+            <p class="services_main_box_txt"> {{ serviceItem.txt }} </p>
         </div>
         
-        
-        <div class="services_main_box">
-            
-            <img class="services_main_box_icon" src="./assets/FlightIcon.png" alt="FlightIcon   " [ngStyle]="{width: '9.2rem'}">
-
-            <h2 class="services_main_box_title">Calculated Weather</h2>
-
-            <p class="services_main_box_txt">
-                Built Wicket longer
-                 admire do barton 
-                 vanity itself do in it.
-            </p>
-
-        </div>
-        
-        <div class="services_main_box">
-            
-            <img class="services_main_box_icon" src="./assets/VocalIcon.png" alt="VocalIcon" [ngStyle]="{width: '9.2rem'}">
-
-            <h2 class="services_main_box_title">Calculated Weather</h2>
-
-            <p class="services_main_box_txt">
-                Built Wicket longer
-                 admire do barton 
-                 vanity itself do in it.
-            </p>
-
-        </div>
-        
-        <div class="services_main_box">
-            
-            <img class="services_main_box_icon" src="./assets/CustomizationIcon.png" alt="CustomizationIcon" [ngStyle]="{width: '9.2rem'}">
-
-            <h2 class="services_main_box_title">Calculated Weather</h2>
-
-            <p class="services_main_box_txt">
-                Built Wicket longer
-                 admire do barton 
-                 vanity itself do in it.
-            </p>
-
-        </div>
-
     </div>
 
 </div>
