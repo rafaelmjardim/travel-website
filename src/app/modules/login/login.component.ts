@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms'
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms'
 
 type NewUser = {
   userName: string,
@@ -13,10 +13,10 @@ type NewUser = {
 })
 export class LoginComponent implements OnInit {
 
-  loginForm!: FormGroup;
+  loginForm!: UntypedFormGroup;
   newUser!: NewUser;
 
-  constructor(private form_builder: FormBuilder) { }
+  constructor(private form_builder: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.loginForm = this.form_builder.group({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormGroup } from "@angular/forms";
 
 import { SignDialogComponent } from './sign-dialog/sign-dialog.component';
 
@@ -17,10 +17,10 @@ type NewUser = {
 })
 export class SignComponent implements OnInit {
 
-  signForm!: FormGroup;
+  signForm!: UntypedFormGroup;
   newUser!: NewUser;
 
-  constructor(private form_builder: FormBuilder, public dialog: MatDialog) { }
+  constructor(private form_builder: UntypedFormBuilder, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     
