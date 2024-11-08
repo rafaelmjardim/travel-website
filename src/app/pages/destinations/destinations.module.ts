@@ -6,12 +6,10 @@ import { DestinationsComponent } from './destinations.component';
 
 
 @NgModule({
-  declarations: [
-    DestinationsComponent
-  ],
-  imports: [
-    CommonModule,
-    DestinationsRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        DestinationsRoutingModule,
+        DestinationsComponent
+    ]
 })
 export class DestinationsModule { }

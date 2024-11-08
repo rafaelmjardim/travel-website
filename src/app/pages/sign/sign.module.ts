@@ -12,17 +12,15 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
-  declarations: [
-    SignComponent,
-    SignDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    SignRoutingModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatDialogModule,
-  ]
+    imports: [
+        CommonModule,
+        SignRoutingModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        MatDialogModule,
+        SignComponent,
+        SignDialogComponent,
+    ]
 })
 export class SignModule { }

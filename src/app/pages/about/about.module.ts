@@ -7,13 +7,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
-  declarations: [
-    AboutComponent
-  ],
-  imports: [
-    CommonModule,
-    AboutRoutingModule,
-    MatDialogModule
-  ]
+    imports: [
+        CommonModule,
+        AboutRoutingModule,
+        MatDialogModule,
+        AboutComponent
+    ]
 })
 export class AboutModule { }

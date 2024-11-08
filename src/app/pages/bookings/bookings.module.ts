@@ -6,12 +6,10 @@ import { BookingsComponent } from './bookings.component';
 
 
 @NgModule({
-  declarations: [
-    BookingsComponent
-  ],
-  imports: [
-    CommonModule,
-    BookingsRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        BookingsRoutingModule,
+        BookingsComponent
+    ]
 })
 export class BookingsModule { }

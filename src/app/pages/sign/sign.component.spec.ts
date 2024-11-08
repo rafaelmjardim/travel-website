@@ -8,8 +8,8 @@ describe('SignComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SignComponent ]
-    })
+    imports: [SignComponent]
+})
     .compileComponents();
   });
 

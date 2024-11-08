@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgFor, NgClass } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 type MenuItem = {
   name: string,
@@ -7,9 +9,11 @@ type MenuItem = {
 }
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    standalone: true,
+    imports: [RouterLink, NgFor, NgClass]
 })
 export class HeaderComponent implements OnInit {
   menuList: MenuItem[] = [

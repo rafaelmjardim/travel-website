@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgFor, NgStyle } from '@angular/common';
 
 type ServiceItem = {
   img: string,
@@ -7,9 +8,11 @@ type ServiceItem = {
 }
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+    selector: 'app-services',
+    templateUrl: './services.component.html',
+    styleUrls: ['./services.component.scss'],
+    standalone: true,
+    imports: [NgFor, NgStyle]
 })
 export class ServicesComponent implements OnInit {
 

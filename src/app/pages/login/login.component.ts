@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms'
+import { UntypedFormBuilder, UntypedFormGroup, ReactiveFormsModule } from '@angular/forms'
+import { RouterLink } from '@angular/router';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
 
 type NewUser = {
   userName: string,
@@ -7,9 +10,11 @@ type NewUser = {
 }
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+    selector: 'app-login',
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.scss'],
+    standalone: true,
+    imports: [ReactiveFormsModule, MatFormField, MatLabel, MatInput, RouterLink]
 })
 export class LoginComponent implements OnInit {
 
