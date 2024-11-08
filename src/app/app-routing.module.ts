@@ -9,31 +9,31 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'services',
-    loadChildren: () => import('./modules/services/services.module').then(m => m.ServicesModule)
+    loadChildren: () => import('./pages/services/services.module').then(m => m.ServicesModule)
   },
   {
     path: 'destinations',
-    loadChildren: () => import('./modules/destinations/destinations.module').then(m => m.DestinationsModule)
+    loadChildren: () => import('./pages/destinations/destinations.module').then(m => m.DestinationsModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
   },
   {
     path: 'signup',
-    loadChildren: () => import('./modules/sign/sign.module').then(m => m.SignModule)
+    loadChildren: () => import('./pages/sign/sign.module').then(m => m.SignModule)
   },
   {
     path: 'bookings',
-    loadChildren: () => import('./modules/bookings/bookings.module').then(m => m.BookingsModule)
+    loadChildren: () => import('./pages/bookings/bookings.module').then(m => m.BookingsModule)
   },
   {
     path: 'about',
-    loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
   }
   
 ];
