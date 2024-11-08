@@ -3,9 +3,9 @@ import { UntypedFormBuilder, UntypedFormGroup, ReactiveFormsModule } from "@angu
 
 import { SignDialogComponent } from './sign-dialog/sign-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { RouterLink } from '@angular/router';
 import { MatInput } from '@angular/material/input';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { RouterLink } from '@angular/router';
 
 type NewUser = {
   userName: string,
@@ -49,10 +49,10 @@ export class SignComponent implements OnInit {
     
     if(this.newUser.userName && this.newUser.email && this.newUser.password) {
      
-      this.dialog.open(SignDialogComponent, {
-        width: '50rem',
-        height: '20rem'
-      });
+      // this.dialog.open(SignDialogComponent, {
+      //   width: '50rem',
+      //   height: '20rem'
+      // });
 
     }
   }
